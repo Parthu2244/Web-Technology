@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            margin-top: 10px;
+            
+        } 
+        form{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 450px;
+            border: 1px solid #ccc ;
+            border-radius: 4px;
+            background-color: #f2f2f2;
+            margin: 0 auto;  
+            box-shadow: 1px 1px 16px black;
+             
+        }
+         input,select{
+            width: 400px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;margin-left: 20px;
+            
+        }
+        h2{
+            margin-top: 10px;
+            text-align: center;
+        }
+        label {
+            margin-left: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        input[type=submit],input[type=reset] {
+            background-color: orange;
+            color:white ;
+            cursor: pointer;
+        }
+        input[type=submit]:hover,input[type=reset]:hover {
+            background-color: #45a049;
+            cursor: pointer;
+            box-shadow: 1px 1px 16px black;
+        }
+        select:focus,input:focus{
+        box-shadow: 1px 1px 16px black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+            <h2>Course Registration</h2>
+            <label for="fname">fname:</label>
+            <input type="text" name="fname" id="fname" required />
+            <label for="lname">lname:</label>
+            <input type="text" name="fname" id="lname" required />
+            <label for="gmail">gmail:</label>
+            <input type="gmail" name="gmail" id="gmail" required />
+            <label for="password">password:</label>
+            <input type="password" name="password" id="password" required />
+            <label for="mobilenumber">Number:</label>
+            <input type="tel" name="mobilenumber" id="mobilenumber" required />
+            <label  for="gender">Gender:</label>
+            <select id="gender">
+                <option>select your gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option>Select a course</option>
+                <option >Data Science</option>
+                <option >Frontend Development</option>
+                <option >Backend development</option>
+                <option>Meachine Learning</option>
+                <option>Blackchain Technology</option>
+              </select>
+               <input type="submit" />
+               <input type="reset" />
+        </form>
+    </div>
+</body>
+</html>

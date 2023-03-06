@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>login form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            background-color: #ecf0f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            min-height:90vh ;
+            margin: 0px;
+        }
+        .html-form{
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 1px 16px rgb(18, 19, 19);
+            border-radius: 7px;
+        } 
+        .html-form h2 {
+         text-align: center;
+         padding: 10px;
+         margin: 10px;
+         font-size: 20px;
+        }
+        .html-form form input {
+            padding: 10px;
+            margin: 10px;
+            width: 350px;
+            border-radius: 10px;
+            border-color: white;
+            display: flex;
+        }
+        .html-form form input :focus{
+            box-shadow: 1px 1px 16px rgb(18, 19, 19);
+        }
+        .html-form form button{
+            width: 350px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 7px;
+            align-items: center;
+            font-size: medium;
+        }
+        .html-form form button:focus{
+            box-shadow: 1px 1px 16px rgb(18, 19, 19);
+        }
+        .html-form form button a{
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            
+            
+        }
+        
+        .button:hover {
+            color: white;
+            background-color: aqua;
+            box-shadow: 1px 1px 16px rgb(18, 19, 19);
+        }
+        p {
+            text-align: center;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+             justify-content: center;
+             justify-content: space-around;
+             padding: 10px;
+        }
+        .main p{
+            padding:0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+     <div class="html-form"> 
+    <form action="mainpage.html" >
+        <h2>Login</h2>
+        <input type="email" name="username" class="name" placeholder="email or username" required><br>
+        <input type="password" name="password" class="password" placeholder="password"><br>
+        <button class="button">Login</button><br>
+        <div class="main"> 
+        <p> <a href="Registration.html">sign up</a></p><br>
+        <p><a href="forgottenpassword.html">forgotten password</a></p>
+       </div>
+    </form>
+    </div>
+</body>
+</html>

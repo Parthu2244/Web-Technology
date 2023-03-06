@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De-activation</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 600px;
+            border: 1px solid #ccc ;
+            border-radius: 4px;
+            background-color: #f2f2f2;
+            margin: 0 auto;  
+            box-shadow: 1px 1px 16px black;
+        }
+        label{
+            margin-left: 19px;
+            
+             
+        }
+        input,textarea{
+            padding: 10px;
+            margin-right: 19px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;margin-left: 20px;
+        }
+        p{
+            margin-left: 19px;
+        }
+        h2{
+            text-align: center;
+        }
+         button{
+            padding: 10px;
+         background-color:olivedrab ;
+         margin-left: 19px;
+         margin-right: 19px;
+         border-radius: 10px;
+         margin-bottom: 10px;
+         cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+            <h2>De-activation Account</h2>
+            <label for="username">Username:</label>
+            <input type="text" name="username" />
+            <label for="password">password:</label>
+            <input type="password" name="password" />
+            <p>Select a reason for deactivating your account:</p>
+            <label><input type="radio" name="reason" value="Taking a break">Taking a break</label><br>
+            <label><input type="radio" name="reason" value="Privacy concerns">Privacy concerns</label><br>
+            <label><input type="radio" name="reason" value="Cyberbullying or harassment">Cyberbullying or harassment</label><br>
+            <label><input type="radio" name="reason" value="Focus on personal growth">Focus on personal growth</label><br>
+            <label><input type="radio" name="reason" value="Moving on from a social media platform">Moving on from a social media platform</label><br>
+            <label><input type="radio" name="reason" value="Other">Other</label><br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+             <button type="submit" >submit</button>
+          </form>
+          
+    </div>
+</body>
+</html>
